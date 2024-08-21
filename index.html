@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/80260855ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <div class="header">
+        <p>Work, Leisure & Everything in Between</p>
+        <span>Whoever you are, whatever you seek, it all starts here.</span>
+      </div>
+      <div class="main">
+        
+        <form action="#">
+          <div class="place">
+            <p>Destination, property name or adress:</p>
+            <input type="text" name="place" id="place" placeholder="Enter the place where you want to go" autocomplete="off">
+          </div>
+          <div class="check">
+            <div class="check-in">
+              <p>Check-in</p>
+             <div class="check-in-select">
+              <label for="checkIn"><i class="fa-regular fa-calendar-days"></i></label>
+              <input type="text" id="checkIn" name="checkIn" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check-in Date">
+             </div>
+            </div>
+            <div class="check-out">
+              <p for="checkOut">Check-out</p>
+              <div class="check-out-select">
+                <label for="checkOut"><i class="fa-regular fa-calendar-days"></i></label>
+                <input type="text" id="checkOut" name="checkOut" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Check-out Date">
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-box">
+              <p>Rooms</p>
+              <select name="rooms" id="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="info-box">
+              <p>Adults</p>
+              <select name="adults" id="adults">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="info-box">
+              <p>Children</p>
+              <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="accomodation">
+            <p>Search for:</p>
+            <div class="accomodation-radio">
+              <div class="accomodation-radio-box">
+                <input type="radio" name="accomodation" id="allProp" value="All Properties">
+                <label for="allProp">All Properties</label>
+              </div>
+              <div class="accomodation-radio-box">
+                <input type="radio" name="accomodation" id="hotels" value="Hotels">
+                <label for="hotels">Hotels</label>
+              </div>
+              <div class="accomodation-radio-box">
+                <input type="radio" name="accomodation" id="homes" value="Homes & Apartments">
+                <label for="homes">Homes & Apartments</label>
+              </div>
+            </div>
+          </div>
+          <div class="price-btn">
+            <button type="submit" id="priceBtn">Show approximate price</button>
+          </div>
+        </form>
+
+        <div class="price" id="price"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
