@@ -265,6 +265,7 @@
 .final-price-desc span {
   font-size: 1.6rem;
   letter-spacing: 2px;
+  font-weight: 600;
   color: rgb(44, 155, 44);
 }
 
